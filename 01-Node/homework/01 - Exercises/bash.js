@@ -14,10 +14,10 @@ function bash() {
       let args = data.toString();
       args = args.trim();
       let argsSep = args.split(" ");
-      let cmd = argsSep[0];
+      let cmd = argsSep.shift();
          
       if(cmd in commands ){
-         commands[cmd](print, args);
+         commands[cmd](print, args.join(" "));
       }else{
          print(`command not found: ${cmd}`)
       }
