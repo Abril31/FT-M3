@@ -1,5 +1,5 @@
-var fs = require("fs");
-var http = require("http");
+let fs = require("fs");
+let http = require("http");
 /* ⚠️ NO MODIFICAR NADA POR ENCIMA DE ESTA LÍNEA ⚠️ */
 /* AQUÍ DEBAJO PUEDES ESCRIBIR LA CONSTANTE DEL PUERTO */
 const PORT = 3001;
@@ -55,4 +55,4 @@ const server = http
   
   .listen(PORT, "localhost");
 
-module.exports = server;
+ module.exports = server;
